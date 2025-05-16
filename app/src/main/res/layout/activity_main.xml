@@ -1,19 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crição de um app estilo site 'MANUAL, sera com o layout landspace'"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--imagem de fundo-->
+            <ImageView
+                android:layout_width="730dp"
+                android:layout_height="200dp"
+                android:background="@mipmap/imgskincare2_round"
+                />
+
+            <!--botão-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:gravity="left">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Começar agora"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="#FEAF8A6E"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+
+                    />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="#E4E4E4"
+                android:gravity="top"
+                android:padding="8dp"
+
+                android:text="Tratamentos elaborados e vendidos por farmácias de manipulação certificadas pela Anvisa"
+                android:textColor="#000"
+                android:textSize="10dp" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:layout_marginLeft="10dp"
+                android:text="Entrega rápida e gratuita"
+                android:background="#E4E4E4"
+                android:textSize="10dp"
+                android:padding="8dp"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:layout_marginLeft="10dp"
+                android:text="Planos flexíveis. Cancele quando quiser."
+                android:background="#E4E4E4"
+                android:textSize="10dp"
+                android:padding="8dp"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:layout_marginLeft="10dp"
+                android:text="Acompanhamento clínico"
+                android:background="#E4E4E4"
+                android:textSize="10dp"
+                android:padding="8dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tratamentos baseados na ciência, personalizados para você"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AQUI VAI VIR OS CARDs"
+            android:layout_gravity="center"/>
+
+
+<!--footer-->
+        <LinearLayout
+            android:layout_width="730dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#0097b2">
+
+<!--footer: contato-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_local_phone_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ficou alguma dúvida? Entre em contato"
+                    android:textColor="#fff"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="#CCCCCC" />
+
+<!--footer: redes sociais-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#0097b2"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nossas redes sociais"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_location_pin_24"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_local_phone_24"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_local_phone_24"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
