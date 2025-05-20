@@ -2,6 +2,7 @@ package com.example.appmanual
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,14 @@ class pagPrincipal : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_pag_principal)
 
+        //chamando minha toolbar
+        setSupportActionBar(findViewById(R.id.toolbar))
+    }
 
+    //abrir o menu de botões
+    override fun onCreateOptionsMenu(menu: Menu): Boolean{
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
     }
 
     fun btnComecar(view: View){
