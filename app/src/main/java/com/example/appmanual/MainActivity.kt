@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,24 +22,33 @@ class MainActivity : AppCompatActivity() {
 
         login = findViewById(R.id.login)
         senha = findViewById(R.id.senha)
-    }
 
+
+    }
 
 
     fun btnEntrar(view: View) {
         val username = login.text.toString()
         val password = senha.text.toString()
 
-        if (verifica(username, password)) {
-            Toast.makeText(this, "Bem-vindo", Toast.LENGTH_LONG).show()
-            val intent = Intent(this, pagPrincipal::class.java)
-            startActivity(intent)
-        } else {
-            Toast.makeText(this, "Credenciais incorretas", Toast.LENGTH_LONG).show()
+        when {
+            username == "user" && password == "123" -> {
+                Toast.makeText(this, "Bem-vindo, usuário!", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, pagPrincipal::class.java))
+            }
+
+            username == "admin" && password == "123" -> {
+                Toast.makeText(this, "Bem-vindo, administrador!", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, area_admin::class.java))
+            }
+
+            else -> {
+                Toast.makeText(this, "Credenciais incorretas", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
     private fun verifica(username: String, password: String): Boolean {
-        return username == "admin" && password == "123"
+        return username == "user" && password == "123"
     }
 }
