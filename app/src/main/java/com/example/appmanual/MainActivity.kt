@@ -2,6 +2,7 @@ package com.example.appmanual
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
@@ -16,9 +17,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         login = findViewById(R.id.login)
         senha = findViewById(R.id.senha)
     }
+
+
 
     fun btnEntrar(view: View) {
         val username = login.text.toString()
