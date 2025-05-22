@@ -50,6 +50,7 @@
                 android:text="Upload de imagem"
                 />
             <Button
+                android:id="@+id/btnUsuarios"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Usuarios"

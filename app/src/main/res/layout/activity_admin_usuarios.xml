@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin_usuarios">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="Area de administrador"
+                android:background="#FEAF8A6E"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <!-- Tabela -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TableLayout
+                android:id="@+id/tabelaUsuarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:shrinkColumns="*"
+                android:paddingTop="20dp">
+
+                <!-- Cabeçalho -->
+                <TableRow android:background="#FEAF8A6E">
+                    <TextView
+                        android:text="ID"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:text="Nome"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:text="Senha"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:text="Admin"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:text="Deletar"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:text="Editar"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <!-- Linha Exemplo 1 -->
+                <TableRow>
+                    <TextView android:text="0" android:padding="8dp"/>
+                    <TextView android:text="user" android:padding="8dp"/>
+                    <TextView android:text="1234" android:padding="8dp"/>
+                    <TextView android:text="0" android:padding="8dp"/>
+                    <TextView android:drawableStart="@drawable/delete_01" android:padding="8dp"/>
+                    <TextView android:drawableStart="@drawable/editar_01" android:padding="8dp"/>
+                </TableRow>
+
+                <!-- Linha Exemplo 2 -->
+                <TableRow>
+                    <TextView android:text="1" android:padding="8dp"/>
+                    <TextView android:text="admin" android:padding="8dp"/>
+                    <TextView android:text="123" android:padding="8dp"/>
+                    <TextView android:text="1" android:padding="8dp"/>
+                    <TextView android:drawableStart="@drawable/delete_01" android:padding="8dp"/>
+                    <TextView android:drawableStart="@drawable/editar_01" android:padding="8dp"/>
+                </TableRow>
+
+                <!-- Adicione mais linhas conforme necessário -->
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

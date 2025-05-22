@@ -19,5 +19,11 @@ class area_admin : AppCompatActivity() {
             var intent = Intent(this, area_admin_carregar_imagem::class.java)
             startActivity(intent)
         }
+
+        val telaAdminUsuario: Button = findViewById(R.id.btnUsuarios)
+        telaAdminUsuario.setOnClickListener{
+            var intent = Intent(this, admin_usuarios::class.java)
+            startActivity(intent)
+        }
     }
 }
