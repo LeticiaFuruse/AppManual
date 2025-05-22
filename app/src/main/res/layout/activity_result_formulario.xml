@@ -14,6 +14,9 @@
         android:id="@+id/textoResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
         android:text="Selecionado:"
         android:textSize="20sp"/>
 
@@ -24,6 +27,7 @@
         android:orientation="vertical"
         android:padding="10dp"
         android:background="#E4E4E4"
+        android:layout_gravity="center"
         android:layout_marginBottom="12dp"
         android:gravity="center_horizontal">
 
@@ -35,12 +39,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRODUTO RECOMENDADO" />
+            android:text="NOME PRODUTO"
+            android:textStyle="bold"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="nome do produto" />
+            android:text="breve descrição do produto" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#003694"
+            android:text="link do produto" />
 
     </LinearLayout>
 
