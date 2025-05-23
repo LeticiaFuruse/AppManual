@@ -42,7 +42,7 @@
         android:padding="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:background="#FEC8AC94"
+        android:background="#D5D5D5"
         android:orientation="vertical">
 
         <!-- Formulário -->
@@ -51,8 +51,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome do produto"
-            android:textColor="#fff"
-            android:textColorHint="#fff"
+            android:background="#33FFFFFF"
+            android:textColor="#000"
+            android:textColorHint="#66000000"
             android:padding="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"/>
@@ -61,8 +62,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Preço"
-            android:textColor="#fff"
-            android:textColorHint="#fff"
+            android:background="#33FFFFFF"
+            android:textColor="#000"
+            android:textColorHint="#66000000"
             android:padding="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"/>
@@ -71,8 +73,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Descrição"
-            android:textColor="#fff"
-            android:textColorHint="#fff"
+            android:background="#33FFFFFF"
+            android:textColor="#000"
+            android:textColorHint="#66000000"
             android:padding="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"/>
@@ -81,8 +84,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="URL de compra"
-            android:textColor="#fff"
-            android:textColorHint="#fff"
+            android:background="#33FFFFFF"
+            android:textColor="#000"
+            android:textColorHint="#66000000"
             android:padding="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"/>
@@ -92,6 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:backgroundTint="#FEAF8A6E"
             android:text="Adicionar Produto"/>
 
     </LinearLayout>
