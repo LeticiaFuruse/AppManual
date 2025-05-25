@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".pagPrincipal">
 
     <!-- Toolbar fixa no topo -->
@@ -119,11 +120,109 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <TextView
+
+            <!--card-->
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AQUI VAI VIR OS CARDs"
-                android:layout_gravity="center" />
+                android:layout_marginLeft="80dp">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
+                    android:backgroundTint="#E4E4E4"
+                    android:background="@drawable/fundo_atracao"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/imgskincare2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Pele seca"
+                        android:textStyle="bold"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:text="Agora sua pele seca tem tratamento com eficacia de 9/10 entre as mulheres e homens no Brasil"
+                        android:textStyle="normal"
+                        android:layout_gravity="center" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#FEAF8A6E"
+
+                        app:cornerRadius="10dp"
+                        android:text="Veja os tratamentos" />
+                </LinearLayout>
+
+                <!-- Espaço vazio flexível -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_height="250dp"
+                    android:backgroundTint="#E4E4E4"
+                    android:background="@drawable/fundo_atracao"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/imgskincare2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Pele oleosa"
+                        android:textStyle="bold"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:text="Agora sua pele oleosa tem solução. Tratamentos comprovados que são eficazes em 9/10 mulheres."
+                        android:textStyle="normal"
+                        android:layout_gravity="center" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#FEAF8A6E"
+                        app:cornerRadius="10dp"
+                        android:text="Veja os tratamentos" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
 
             <!-- footer -->
             <LinearLayout
