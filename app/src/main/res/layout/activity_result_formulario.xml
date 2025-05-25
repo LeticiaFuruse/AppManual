@@ -10,6 +10,12 @@
     android:orientation="vertical"
     tools:context=".result_formulario">
 
+    <!-- Toolbar fixa no topo -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <TextView
         android:id="@+id/textoResultado"
         android:layout_width="wrap_content"
@@ -22,7 +28,7 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
@@ -34,23 +40,28 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/imgskincare2" />
+            android:src="@mipmap/creme_rosto_1"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NOME PRODUTO"
+            android:text="LOÇÃO HIDRATANTE"
+            android:layout_marginBottom="10dp"
             android:textStyle="bold"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="breve descrição do produto" />
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Ele auxilia na remoção de impurezas, controla a oleosidade e previne acne." />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#003694"
-            android:text="link do produto" />
+            android:text="Compre: https://www.principia.com" />
 
     </LinearLayout>
 
