@@ -30,10 +30,66 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#E4E4E4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:text="Em que acreditamos?"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="O primeiro passo é se abrir e conversar - nenhum assunto é tão vergonhoso ou é tão tabu que não possa ser discutido. Depois disso, é hora de abraçar soluções holísticas, olhando para si mesmo de cima a baixo, de dentro para fora e deixando de lado as fórmulas mágicas."
+                    android:textColor="#000"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nossa chegada ao país é bem recente, mas já temos muitas histórias para contar. Se esse é seu primeiro contato com a gente, sinta-se à vontade, nós preparamos esse vídeo para você entender um pouco mais sobre como é cuidar da sua saúde com a gente. Veja!"
+                    android:textColor="#000"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <VideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="#E4E4E4"
+                android:background="#FEAF8A6E"
                 android:padding="16dp"
                 android:layout_height="wrap_content">
 
@@ -42,10 +98,10 @@
                     android:id="@+id/titulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Quem Somos"
+                    android:text="Venha nos conhecer"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="#000000"
+                    android:textColor="#fff"
                     android:layout_marginBottom="16dp"/>
 
                 <!-- Imagem da empresa -->
@@ -60,7 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Somos uma empresa apaixonada por inovação e cuidados personalizados. Atuamos no setor de skincare, desenvolvendo soluções que combinam ciência, tecnologia e amor pela saúde da pele. Trabalhamos com farmácias de manipulação certificadas pela Anvisa, garantindo segurança e qualidade em todos os nossos produtos."
-                    android:textColor="#333333"
+                    android:textColor="#fff"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     android:layout_marginBottom="16dp"/>
@@ -77,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Nossos valores são: transparência, cuidado, compromisso com o bem-estar e foco total na experiência do cliente. Acreditamos que cada pessoa é única e, por isso, desenvolvemos tratamentos que se adaptam às necessidades individuais."
-                    android:textColor="#333333"
+                    android:textColor="#fff"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     android:layout_marginBottom="16dp"/>
@@ -85,52 +141,7 @@
             </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:background="#FEAF8A6E">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:layout_marginTop="20dp"
-                    android:text="Em que acreditamos?"
-                    android:textStyle="bold"
-                    android:textSize="24sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="O primeiro passo é se abrir e conversar - nenhum assunto é tão vergonhoso ou é tão tabu que não possa ser discutido. Depois disso, é hora de abraçar soluções holísticas, olhando para si mesmo de cima a baixo, de dentro para fora e deixando de lado as fórmulas mágicas."
-                    android:textColor="#fff"
-                    android:layout_marginBottom="20dp"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Nossa chegada ao país é bem recente, mas já temos muitas histórias para contar. Se esse é seu primeiro contato com a gente, sinta-se à vontade, nós preparamos esse vídeo para você entender um pouco mais sobre como é cuidar da sua saúde com a gente. Veja!"
-                    android:textColor="#fff"
-                    android:layout_marginBottom="20dp"
-                    />
-
-
-                <VideoView
-                    android:id="@+id/videoView"
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_gravity="center"
-                    />
-
-
-            </LinearLayout>
 
             <!-- footer -->
             <LinearLayout
