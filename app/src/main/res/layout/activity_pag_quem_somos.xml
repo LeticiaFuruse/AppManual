@@ -25,63 +25,195 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
             android:gravity="center_horizontal">
 
-            <!-- Título -->
-            <TextView
-                android:id="@+id/titulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Quem Somos"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:layout_marginBottom="16dp"/>
 
-            <!-- Imagem da empresa -->
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/imgskincare2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#E4E4E4"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
 
-            <!-- Texto principal -->
-            <TextView
-                android:id="@+id/texto_quem_somos"
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quem Somos"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Imagem da empresa -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/imgskincare2" />
+
+                <!-- Texto principal -->
+                <TextView
+                    android:id="@+id/texto_quem_somos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Somos uma empresa apaixonada por inovação e cuidados personalizados. Atuamos no setor de skincare, desenvolvendo soluções que combinam ciência, tecnologia e amor pela saúde da pele. Trabalhamos com farmácias de manipulação certificadas pela Anvisa, garantindo segurança e qualidade em todos os nossos produtos."
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Segunda imagem ilustrativa -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/imgskincare2" />
+
+                <!-- Texto com valores -->
+                <TextView
+                    android:id="@+id/texto_valores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nossos valores são: transparência, cuidado, compromisso com o bem-estar e foco total na experiência do cliente. Acreditamos que cada pessoa é única e, por isso, desenvolvemos tratamentos que se adaptam às necessidades individuais."
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Somos uma empresa apaixonada por inovação e cuidados personalizados. Atuamos no setor de skincare, desenvolvendo soluções que combinam ciência, tecnologia e amor pela saúde da pele. Trabalhamos com farmácias de manipulação certificadas pela Anvisa, garantindo segurança e qualidade em todos os nossos produtos."
-                android:textColor="#333333"
-                android:textSize="16sp"
-                android:lineSpacingExtra="4dp"
-                android:layout_marginBottom="16dp"/>
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#FEAF8A6E">
 
-            <!-- Segunda imagem ilustrativa -->
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/imgskincare2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:text="Em que acreditamos?"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
 
-            <!-- Texto com valores -->
-            <TextView
-                android:id="@+id/texto_valores"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="O primeiro passo é se abrir e conversar - nenhum assunto é tão vergonhoso ou é tão tabu que não possa ser discutido. Depois disso, é hora de abraçar soluções holísticas, olhando para si mesmo de cima a baixo, de dentro para fora e deixando de lado as fórmulas mágicas."
+                    android:textColor="#fff"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nossa chegada ao país é bem recente, mas já temos muitas histórias para contar. Se esse é seu primeiro contato com a gente, sinta-se à vontade, nós preparamos esse vídeo para você entender um pouco mais sobre como é cuidar da sua saúde com a gente. Veja!"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <!-- footer -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nossos valores são: transparência, cuidado, compromisso com o bem-estar e foco total na experiência do cliente. Acreditamos que cada pessoa é única e, por isso, desenvolvemos tratamentos que se adaptam às necessidades individuais."
-                android:textColor="#333333"
-                android:textSize="16sp"
-                android:lineSpacingExtra="4dp"
-                android:layout_marginBottom="16dp"/>
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#0097b2"
+                android:padding="16dp">
 
-            <!-- Rodapé -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="© 2025 - Nome da Sua Empresa"
-                android:textSize="12sp"
-                android:textColor="#999999"
-                android:layout_marginTop="24dp"/>
+                <!-- Contato -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/baseline_local_phone_24"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Ficou alguma dúvida? Entre em contato"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Linha divisória -->
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="#80FFFFFF"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Redes Sociais -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nossas redes sociais"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/baseline_location_pin_24"
+                        android:layout_marginHorizontal="8dp"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/baseline_lens_24"
+                        android:layout_marginHorizontal="8dp"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/baseline_person_search_24"
+                        android:layout_marginHorizontal="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
+
+
+
+
+
     </ScrollView>
 
 </LinearLayout>
