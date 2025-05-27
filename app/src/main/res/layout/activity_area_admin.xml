@@ -130,10 +130,37 @@
 
         </LinearLayout>
 
+
     </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#E0E0E0"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Listar todos os produtos"
+                />
 
+            <Button
+                android:id="@+id/btnListarProdutos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#FEAF8A6E"
+                android:text="Produtos"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 

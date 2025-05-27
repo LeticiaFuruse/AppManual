@@ -107,8 +107,8 @@
                 <!-- Imagem da empresa -->
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/imgskincare2" />
+                    android:layout_height="200dp"
+                    android:src="@drawable/img_skin_care__1_" />
 
                 <!-- Texto principal -->
                 <TextView
@@ -124,8 +124,8 @@
                 <!-- Segunda imagem ilustrativa -->
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/imgskincare2" />
+                    android:layout_height="200dp"
+                    android:src="@drawable/skin_care_bg" />
 
                 <!-- Texto com valores -->
                 <TextView

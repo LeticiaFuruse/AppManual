@@ -30,5 +30,12 @@ class area_admin : AppCompatActivity() {
             var intent = Intent(this, admin_produtos::class.java)
             startActivity(intent)
         }
+
+        // tela listar produto
+        val telaAdminListarProduto: Button = findViewById(R.id.btnListarProdutos)
+        telaAdminListarProduto.setOnClickListener{
+            var intent = Intent(this, admin_listar_produto::class.java)
+            startActivity(intent)
+        }
     }
 }
