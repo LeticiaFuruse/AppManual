@@ -2,6 +2,8 @@ package com.example.appmanual
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.Toast
@@ -13,6 +15,10 @@ class formulario : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_formulario)
+
+        //chamando minha toolbar
+        setSupportActionBar(findViewById(R.id.toolbar))
+
 
         val radioSeca = findViewById<RadioButton>(R.id.radio_seca)
         val radioOleosa = findViewById<RadioButton>(R.id.radio_oleosa)
@@ -44,6 +50,25 @@ class formulario : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Selecione uma opção", Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+
+    //abrir o menu de botões
+    override fun onCreateOptionsMenu(menu: Menu): Boolean{
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    // Função que captura o clique nos itens do menu
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.btnQuemSomos -> {
+                val intent = Intent(this, pag_quem_somos::class.java) // <-- Abre tela Quem Somos
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }

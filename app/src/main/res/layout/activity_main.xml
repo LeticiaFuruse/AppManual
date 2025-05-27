@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#6EFEAF8A"
+    android:background="#FEAF8A6E"
     tools:context=".MainActivity">
 
 <LinearLayout
@@ -78,10 +78,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="btnEntrar"
         android:textSize="15sp"
-        android:backgroundTint="#8AFEB66E"
-        android:textColor="#000000"
+        android:backgroundTint="#FEAF8A6E"
+        android:textColor="#fff"
         android:padding="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"
