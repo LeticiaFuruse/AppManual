@@ -31,12 +31,13 @@
                 android:layout_height="wrap_content">
 
                 <!-- imagem de fundo -->
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@mipmap/imgskincare2_round" />
 
                 <!-- botão -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@mipmap/imgskincare2_round" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
