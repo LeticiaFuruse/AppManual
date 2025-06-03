@@ -15,7 +15,9 @@
         android:theme="@style/Theme.AppManual"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
+            android:name=".itemHistorico"
+            android:exported="false" />
+        <activity
             android:name=".HistoricoCuidadosActivity"
             android:exported="false" />
         <activity
@@ -23,9 +25,9 @@
             android:exported="false" />
         <activity
             android:name=".RotinaDiariaActivity"
-=======
+            android:exported="false" />
+        <activity
             android:name=".admin_listar_produto"
->>>>>>> b24d81c925d66e0b50711911bdd7b89b68d0eb13
             android:exported="false" />
         <activity
             android:name=".admin_produtos"

@@ -4,11 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class result_formulario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +32,7 @@ class result_formulario : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.btnQuemSomos -> {
-                val intent = Intent(this, pag_quem_somos::class.java) // <-- Abre tela Quem Somos
+                val intent = Intent(this, pag_quem_somos::class.java)
                 startActivity(intent)
                 true
             }
@@ -42,4 +40,8 @@ class result_formulario : AppCompatActivity() {
         }
     }
 
+    fun btnComprar(view: View){
+        var intent = Intent(this,itemHistorico()::class.java)
+        startActivity(intent)
+    }
 }

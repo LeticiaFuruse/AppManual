@@ -37,7 +37,7 @@ class admin_produtos : AppCompatActivity() {
                 // Cria produto e adiciona na lista global
                 val produto = Produto(nomeProduto, precoProduto, descricaoProduto, linkProduto)
                 // usa o metodo singletown para adicionar
-                ProdutoRepository.adicionarProduto(produto)
+
 
                 // Limpa os campos
                 btnNomeProd.text.clear()
