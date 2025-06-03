@@ -41,7 +41,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:background="@mipmap/imgskincare2" />
+                    android:background="@drawable/img_skin_care_criado" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -144,12 +144,12 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:src="@mipmap/imgskincare2" />
+                        android:src="@drawable/kit_skin_care_1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -192,12 +192,12 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:layout_gravity="center"
-                        android:src="@mipmap/imgskincare2" />
+                        android:src="@drawable/kit_skin_care_1" />
 
                     <TextView
                         android:layout_width="wrap_content"
