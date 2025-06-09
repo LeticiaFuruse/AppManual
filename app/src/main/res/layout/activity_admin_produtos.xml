@@ -92,12 +92,22 @@
             android:layout_marginBottom="8dp"/>
 
         <Button
-            android:id="@+id/btnAdicionar"
+            android:id="@+id/btnSalvar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#FEAF8A6E"
             android:text="Adicionar Produto"/>
+
+
+        <Button
+            android:id="@+id/btnAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FEAF8A6E"
+            android:text="Verificar Produto"/>
+
 
     </LinearLayout>
 
@@ -115,9 +125,11 @@
                 android:layout_marginTop="16dp">
             </LinearLayout>
 
+
         </ScrollView>
 
 
-
     </LinearLayout>
+
+
 </ScrollView>
